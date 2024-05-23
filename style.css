@@ -1,0 +1,25 @@
+   body {
+    background-color: #242424;
+    color: #DFBBF5;
+    font-family: Verdana;
+  }
+  a:link {
+    color: #7931f3;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #C76FEC;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
