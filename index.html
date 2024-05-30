@@ -16,22 +16,55 @@
 
             <!-- Text Testing -->
             <p>Haaiii :3 You found meee!!1!!!! </p>
-            <p>Check out my theme here, i made it meself :3 </p>
-            <p>I just used the Mother 3 soundfont on it lol </p>
-                
+            <p>Click on "Play" to hear a random somg i worked on!!! Just refresh for a chance to hear a new one!!</p>
+
+
             <!-- Audio Setting Test -->
             <audio id="ScizzTheme">
                 <source src="ScizzTheme.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
+            <audio id="Hearthome">
+                <source src="HearthomeCity.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="BlackTower">
+                <source src="BlackTower.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
             
+
             <!-- Buttons -->
             <button onclick="playAudio()" type="button">Play</button>
             <button onclick="pauseAudio()" type="button">Pause</button> 
             
+
             <!-- Scripting Buttons -->
             <script>
-                var x = document.getElementById("ScizzTheme"); 
+                
+                // Random Integer 
+                function getRandomInt(max) {
+                    return Math.floor(Math.random() * max);
+                }
+                song = getRandomInt(3);
+
+                // Set songs 
+                var scizz = document.getElementById("ScizzTheme"); 
+                var heart = document.getElementById("Hearthome"); 
+                var black = document.getElementById("BlackTower"); 
+
+                // Song Selector 
+                if (song == 0) {
+                    var x = black;
+
+                } else if (song == 1) {
+                    var x = heart;
+
+                } else {
+                    var x = scizz;
+                }
+
+                // Play/Pause
                 function playAudio() { 
                     x.play(); 
                 } 
@@ -39,7 +72,6 @@
                     x.pause(); 
                 } 
             </script>
-            
 
             <br>
             <br>
