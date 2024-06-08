@@ -1,77 +1,76 @@
-/*Oppa Gangnam Style :3*/
+/*Oppa Gangnam Style*/
+  body {
+    align-items: center;
+    background: background-color: #242424;
+    color: #DFBBF5;
+    font-family: 'Times New Roman';
+  }
 
-body {
-   align-items: center;
-   background: linear-gradient(320deg, #24, #1C, #0);
-   color: #DFBBF5;
-   font-family: 'Times New Roman';
-}
+  ::selection {
+    color: rgb(35, 28, 217);
+    background-color: gray;
+  }
 
-::selection {
-   color: rgb(35, 28, 217);
-   background-color: gray;
-}
+  a:link {
+    color: #7931f3;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #C76FEC;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
-a:link {
-   color: #7931f3;
-   background-color: transparent;
-   text-decoration: underline;
-}
-a:visited {
-   color: #C76FEC;
-   background-color: transparent;
-   text-decoration: underline;
-}
-a:hover {
-   color: red;
-   background-color: transparent;
-   text-decoration: underline;
-}
-a:active {
-   color: blue;
-   background-color: transparent;
-   text-decoration: underline;
-}
+  /* Scales the size of entire hover over image*/
+  .container {
+    position: relative;
+    width: 45%;
+  }
 
-/*Scales the size of entire hover over image*/
-.container {
-   position: relative;
-   width: 45%;
-}
+  /* Scales the size of image */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.1s ease;
+    background-color: transparent;
+  }
 
-/* Scales the size of image */
-.image {
-   display: block;
-   width: 100%;
-   height: auto;
-}
-.overlay {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   height: 100%;
-   width: 100%;
-   opacity: 0;
-   transition: 0.1s ease;
-   background-color: transparent;
-}
-
-.container:hover .overlay {
-   opacity: 1;
-}
+  .container:hover .overlay {
+    opacity: 1;
+  }
   
-.button{
-   font-size: 1.2rem;
-   box-shadow: 0px 0px 20px black;
-   border-radius: 12px;
-   background-color: #1C;
-   padding: 3px 0px;
-   width: 20%
-}
-.button:hover{
-   box-shadow: 0px 0px 40px;
-   cursor:pointer
-}
+  .button{
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 12px;
+    background-color: #1c1c1c;
+    padding: 3px 0px;
+    width: 75px;
+  }
+  .button:hover{
+    box-shadow: 0px 0px 40px;
+    cursor:pointer
+  }
  
