@@ -1,7 +1,7 @@
 /*Oppa Gangnam Style*/
   body {
     align-items: center;
-    background: background-color: #242424;
+    background: linear-gradient(320deg, #242424, #1c1c1c, #000000);
     color: #DFBBF5;
     font-family: 'Times New Roman';
   }
