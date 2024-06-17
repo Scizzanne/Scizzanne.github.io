@@ -1,75 +1,78 @@
 <!DOCTYPE html> 
 <html>
-
     <!-- Head -->
     <head>
-        <!-- This is how you comment lol -->
+        <!-- Update 6/17/2024 -->
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <link rel="icon" type="image/png" href="lilscizz.png">
         <title>Scizzy's Fucking Shit</title>
-        <link href="style.css" rel="stylesheet" type="text/css" media="all">   
+        <link rel="stylesheet" href="style.css" type="text/css" media="all">   
+        <script defer src="ScizzySongs.js"></script>
     </head>
 
-        <body>
-            <center>
-
+        <body>  
             <!-- Text Testing -->
-            <p>Haaiii :3 You found meee!!1!!!! </p>
-            <p>Click on "Play" to hear a random somg i worked on!!! Just refresh for a chance to hear a new one!!</p>
-
+            <p>HI hiHIII hihihihiii you found meeee!~!!!!1!!</p>
+            <p>Click on "Play" to hear a random somg i worked on!!! 
+                Just refresh for a chance to hear a new one!!</p>
 
             <!-- Audio Setting Test -->
+            <section>
+
             <audio id="ScizzTheme">
                 <source src="ScizzTheme.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-                
+
             <audio id="Hearthome">
-                <source src="HearthomeCityScizzEdition.mp3" type="audio/mpeg">
+                <source src="HearthomeCity.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-                
+
             <audio id="BlackTower">
                 <source src="BlackTower.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-                
+            
             <audio id="GreatCanyon">
                 <source src="GreatCanyonScizzEdition.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
 
+            <audio id="Overture">
+                <source src="ScizzOverture1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <audio id="WiFiConnection">
+                <source src="WiFiConnectionScizzEdition.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            </section>
+
             <!-- Buttons -->
-            <button class = "butt" onclick = "playAudio()">
-                Play
-            </button>
-
-            <button class = "butt" onclick = "pauseAudio()">
-                Pause
-            </button>
-
-            <audio id = "Overture">
-                <source src = "ScizzOverture1.mp3" type = "audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-
-            <audio id = "WiFiConnection">
-                <source src = "WiFiConnectionScizzEdition.mp3" type = "audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-                
-            <!-- Scripting Buttons -->
-            <script src = "ScizzySongs.js"></script>
+            <section class="hidden">
+                <button class="butt" onclick="playAudio()">Play</button>
+                <button class="butt" onclick="pauseAudio()">Pause</button>
+            </section>
 
             <br>
-            <br>
-            
+
+            <!-- TODO: PLACE TEXT HERE -->
+
             <!-- Video Imbed -->
-            <video width="320" height="320" controls>
-                <source src="funny.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            
+            <section class="hidden">
+                <video width="320" height="320" controls>
+                    <source src="funny.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            
+            <br><br>
 
             <!-- 
                 Well lookie here! Looks like someone figured out what Ctrl + u does. Hello!
@@ -78,8 +81,5 @@
                 to this website the more I learn! Thank you for visiting and I hope you have a 
                 wonderful rest of your day! 
             -->
-                
-            </center>
         </body>
-
-        
+</html>
