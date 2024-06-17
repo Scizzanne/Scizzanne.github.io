@@ -1,100 +1,116 @@
-/*Oppa Gangnam Style*/
-  body {
-    align-items: center;
-    background: linear-gradient(320deg, #242424, #1c1c1c, #000000);
-    color: #DFBBF5;
-    font-family: 'Times New Roman';
-  }
+/*OPPAN GANGNAM STYLE*/  
+body {
+  text-align: center;
+  background: linear-gradient(320deg, 
+  #242424, #1c1c1c, #000000);
+  color: #DFBBF5;
+  font-family: 'Times New Roman';
+  margin: 9cqmin;
+}
 
-  ::selection {
-    color: rgb(35, 28, 217);
-    background-color: gray;
-  }
+/* Changing Colors */
+::selection {
+  color: rgb(35, 28, 217);
+  background-color: gray;
+}
+a:link {
+  color: #7931f3;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: #C76FEC;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
-  a:link {
-    color: #7931f3;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  a:visited {
-    color: #C76FEC;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  a:active {
-    color: blue;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+  /* Scales the size of entire hover over image */
+.container {
+  position: relative;
+  width: 45%;
+}
 
-  /* Scales the size of entire hover over image*/
-  .container {
-    position: relative;
-    width: 45%;
-  }
+/* Image Overlay */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.1s ease;
+  background-color: transparent;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
 
-  /* Scales the size of image */
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.1s ease;
-    background-color: transparent;
-  }
+/* Buttons */
+.butt {
+  background-position: center;
+  transition: 0.8s;
+}
+.butt:hover {
+  background: #171717 
+  radial-gradient(circle,
+  transparent 1%, #171717 
+  1%) center/15000%;
+}
+.butt:active {
+  background-color: #333;
+  background-size: 100%;
+  transition: 0s;
+}
+button {
+  background: #1c1c1c;
+  border: black;
+  color: #DFBBF5;
+  border-radius: 50px;
+  font-family: 'Times New Roman';
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 20px black;
+  padding: 10px;
+  margin: 8px;
+  width: 75px;
+}
+button:hover {
+  box-shadow: 0px 0px 40px #DFBBF5;
+  cursor:pointer;
+}
+button:active {
+  background-color: black;
+}
 
-  .container:hover .overlay {
-    opacity: 1;
-  }
+/* Transition Animation */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
   
-  .butt {
-    background-position: center;
-    transition: 0.8s;
-  }
-  .butt:hover {
-    background: #171717 
-    radial-gradient(circle,
-    transparent 1%, #171717 
-    1%) center/15000%;
-  }
-  .butt:active {
-    background-color: #333;
-    background-size: 100%;
-    transition: 0s;
-  }
-
-  button {
-    background: #1c1c1c;
-    border: black;
-    color: #DFBBF5;
-    border-radius: 12px;
-    font-family: 'Times New Roman';
-    font-size: 1.2rem;
-    box-shadow: 0px 0px 20px black;
-    outline: none;
-    text-transform: none;
-    padding: 3px 0px;
-    width: 75px;
-  }
-  button:hover {
-    box-shadow: 0px 0px 40px #DFBBF5;
-    cursor:pointer;
-  }
-  button:active {
-    background-color: black;
-  }
+  
+  
  
