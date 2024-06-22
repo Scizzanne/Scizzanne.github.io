@@ -96,6 +96,8 @@ button:hover {
 }
 button:active {
   background-color: black;
+  transform: scale(1.05);
+  transition-duration: 0.8s;
 }
 
 /* Transition Animation */
@@ -110,6 +112,21 @@ button:active {
   filter: blur(0);
   transform: translateY(0);
 }
+
+/* Video Animation*/
+video {
+  transition-duration: 0.5s;
+}
+video:hover {
+  box-shadow: 0px 0px 30px black;
+  transition-duration: 0.5s;
+  transform: scale(1.05);
+}
+video:active{
+  box-shadow: 0px 0px 50px black;
+  transform: scale(1.10);
+}
+
   
   
   
