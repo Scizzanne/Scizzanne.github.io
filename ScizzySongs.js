@@ -84,10 +84,7 @@ function toggleText() {
         text2.style.display = "none";
 }
 
-// TODO: Produce Message - SHOULD BE INVISIBLE FIRST
-
-// Shows hidden when content is on screen 
-// (set class to hidden to activate)
+// Shows hidden when content is on screen (set class to hidden to activate)
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -98,6 +95,5 @@ const observer = new IntersectionObserver((entries) => {
             }
     });
 });
-
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
