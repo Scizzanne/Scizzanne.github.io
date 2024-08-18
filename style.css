@@ -127,7 +127,15 @@ video:active{
   transform: scale(1.10);
 }
 
-  
-  
+.glowing {
+  animation: glow 1s infinite alternate;
+  animation-play-state: running;
+}
+
+@keyframes glow {
+  to {
+    text-shadow:rgb(187, 0, 255) 1px 0 10px;
+  }
+}
   
  
