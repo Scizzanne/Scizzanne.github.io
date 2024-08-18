@@ -51,18 +51,20 @@
 
             <!-- Buttons -->
             <section class="hidden">
-                <button class="butt" onclick="playAudio()">Play</button>
-                <button class="butt" onclick="pauseAudio()">Pause</button>
+                <button id='piss' class="butt" onclick="togglePlay()">Play</button>
+
+            <!-- Text -->
+                <div>
+                    <p id='identify'>Now Playing...</p>
+                    <p id='hide' style='display: block'>Nothing! :3</p>
+                    <p id='show' style='display: none'></p>
+                </div>
+                <br>
             </section>
 
-            <br>
-
-            <!-- TODO: PLACE TEXT HERE -->
-
             <!-- Video Imbed -->
-            
             <section class="hidden">
-                <video width="320" height="320" controls>
+                <video id="vid" width="320" height="320" controls onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();">
                     <source src="funny.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
