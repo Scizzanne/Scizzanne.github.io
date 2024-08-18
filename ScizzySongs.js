@@ -61,6 +61,7 @@ function togglePlay() {
 x.onplaying = function() {
     isPlaying = true;
     document.getElementById("piss").innerHTML = "Pause";
+    document.getElementById("show").style.animationPlayState = "running";
     if (fun < 3) {
         document.getElementById("identify").innerHTML = playingMessage;
     } else {
@@ -70,6 +71,7 @@ x.onplaying = function() {
 x.onpause = function() {
     isPlaying = false;
     document.getElementById("piss").innerHTML = "Play";
+    document.getElementById("show").style.animationPlayState = "paused";
     if (fun < 3) {
         document.getElementById("identify").innerHTML = "Why'd you stop? qwq";
     } else {
