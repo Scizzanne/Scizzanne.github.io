@@ -25,15 +25,15 @@ song = getRandomInt(100);
 var playingMessage = new String();
 if (song < 16) {
     var x = black;
-    document.getElementById("show").innerHTML = "Pokemon Black 2 & White 2: Black Tower";
+    document.getElementById("show").innerHTML = "Pokemon Black 2 & White 2: Black Tower - Mother 3 Soundfont";
     playingMessage = "This one was for fun :3 Just a little soundfont experiment!";
 } else if (song < 32) {
     var x = heart;
-    document.getElementById("show").innerHTML = "Pokemon Diamond, Pearl, & Platinum: Hearthome City (Night)";
+    document.getElementById("show").innerHTML = "Pokemon Diamond, Pearl, & Platinum: Hearthome City (Night) - Scizz Edition";
     playingMessage = "I might play this with my oboe sometime! :3";
 } else if (song < 48) {
     var x = great;
-    document.getElementById("show").innerHTML = "Pokemon Mystery Dungeon: Great Canyon";
+    document.getElementById("show").innerHTML = "Pokemon Mystery Dungeon: Great Canyon - Scizz Edition";
     playingMessage = "Ooooh I love this one! I might make more PMD covers .O.";
 } else if (song < 64) {
     var x = overt;
@@ -41,11 +41,11 @@ if (song < 16) {
     playingMessage = "This is a remake of a song I made when I was a kid! I think I was 15 when I first made this...";
 } else if (song < 80) {
     var x = WiFi;
-    document.getElementById("show").innerHTML = "Pokemon Diamond, Pearl, & Platinum: Nintendo WiFi Connection";
+    document.getElementById("show").innerHTML = "Pokemon Diamond, Pearl, & Platinum: Nintendo WiFi Connection - Scizz Edition";
     playingMessage = "I posted this one on Twitter before :3";
 } else {
     var x = scizz;
-    document.getElementById("show").innerHTML = "Scizzanne: Main Theme";
+    document.getElementById("show").innerHTML = "Scizzanne: Main Theme (UNFINISHED) - Mother 3 Soundfont";
     playingMessage = "This one isn't finished hehe... I will finish it eventually!";
 }
 
