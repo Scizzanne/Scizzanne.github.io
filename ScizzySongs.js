@@ -29,7 +29,7 @@ if (song < 16) {
     playingMessage = "This one was for fun :3 Just a little soundfont experiment!";
 } else if (song < 32) {
     var x = heart;
-    document.getElementById("show").innerHTML = "Pokemon Diamond, Pearl, & Platinum: Hearthome City";
+    document.getElementById("show").innerHTML = "Pokemon Diamond, Pearl, & Platinum: Hearthome City (Night)";
     playingMessage = "I might play this with my oboe sometime! :3";
 } else if (song < 48) {
     var x = great;
