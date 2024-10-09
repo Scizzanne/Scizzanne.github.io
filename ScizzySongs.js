@@ -57,9 +57,6 @@ window.onkeydown = function(event) {
     if (event.keyCode === 66) {
         event.preventDefault();
         bite.play();
-    } else if (event.keyCode === 69) {
-        event.preventDefault();
-        erm.play();
     } else if (event.keyCode === 65) {
         event.preventDefault();
         zay.play();
