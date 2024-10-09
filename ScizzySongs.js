@@ -11,6 +11,9 @@ var great = document.getElementById("GreatCanyon");
 var overt = document.getElementById("Overture")
 var WiFi = document.getElementById("WiFiConnection")
 var vid = document.getElementById("vid");
+var bite = document.getElementById("Bite");
+var zay = document.getElementById("Ahh");
+var vine = document.getElementById("boom");
 
 // To Prevent Earrape
 vid.volume = 0.5;
@@ -47,6 +50,23 @@ if (song < 16) {
     var x = scizz;
     document.getElementById("show").innerHTML = "Scizzanne: Main Theme (UNFINISHED) - Mother 3 Soundfont";
     playingMessage = "This one isn't finished hehe... I will finish it eventually!";
+}
+
+// Sound effects from keybinds
+window.onkeydown = function(event) {
+    if (event.keyCode === 66) {
+        event.preventDefault();
+        bite.play();
+    } else if (event.keyCode === 69) {
+        event.preventDefault();
+        erm.play();
+    } else if (event.keyCode === 65) {
+        event.preventDefault();
+        zay.play();
+    } else if (event.keyCode === 86) {
+        event.preventDefault();
+        vine.play();
+    }
 }
 
 // Play/Pause
