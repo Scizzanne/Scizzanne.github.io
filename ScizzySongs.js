@@ -10,10 +10,14 @@ var black = document.getElementById("BlackTower");
 var great = document.getElementById("GreatCanyon");
 var overt = document.getElementById("Overture")
 var WiFi = document.getElementById("WiFiConnection")
-var vid = document.getElementById("vid");
+
+// Set Soundeffects
 var bite = document.getElementById("Bite");
 var zay = document.getElementById("Ahh");
 var vine = document.getElementById("boom");
+
+// Video
+var vid = document.getElementById("vid");
 
 // To Prevent Earrape
 vid.volume = 0.5;
@@ -52,20 +56,6 @@ if (song < 16) {
     playingMessage = "This one isn't finished hehe... I will finish it eventually!";
 }
 
-// Sound effects from keybinds
-window.onkeydown = function(event) {
-    if (event.keyCode === 66) {
-        event.preventDefault();
-        bite.play();
-    } else if (event.keyCode === 65) {
-        event.preventDefault();
-        zay.play();
-    } else if (event.keyCode === 86) {
-        event.preventDefault();
-        vine.play();
-    }
-}
-
 // Play/Pause
 var isPlaying = false;
 
@@ -96,11 +86,26 @@ x.onpause = function() {
     }
 };
 
+// Toggles Text
 function toggleText() {
     var text = document.getElementById("show");
     var text2 = document.getElementById("hide");
         text.style.display = "block";
         text2.style.display = "none";
+}
+
+// Sound effects from keybinds
+window.onkeydown = function(event) {
+    if (event.keyCode === 66) {
+        event.preventDefault();
+        bite.play();
+    } else if (event.keyCode === 65) {
+        event.preventDefault();
+        zay.play();
+    } else if (event.keyCode === 86) {
+        event.preventDefault();
+        vine.play();
+    }
 }
 
 // Shows hidden when content is on screen (set class to hidden to activate)
