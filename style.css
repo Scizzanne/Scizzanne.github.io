@@ -1,4 +1,8 @@
 /*OPPAN GANGNAM STYLE*/  
+html {
+  cursor: url('scizzu.png'), auto;
+}
+
 body {
   text-align: center;
   background: linear-gradient(320deg, 
@@ -72,6 +76,7 @@ a:active {
   radial-gradient(circle,
   transparent 1%, #171717 
   1%) center/15000%;
+  cursor: url('scizzuSelect.png'), auto;
 }
 .butt:active {
   background-color: #333;
@@ -93,6 +98,7 @@ button {
 button:hover {
   box-shadow: 0px 0px 40px #DFBBF5;
   cursor:pointer;
+  cursor: url('scizzuSelect.png'), auto;
 }
 button:active {
   background-color: black;
@@ -121,6 +127,7 @@ video:hover {
   box-shadow: 0px 0px 30px black;
   transition-duration: 0.5s;
   transform: scale(1.05);
+  cursor: url('scizzuSelect.png'), auto;
 }
 video:active{
   box-shadow: 0px 0px 50px black;
