@@ -1,98 +1,106 @@
 <!DOCTYPE html> 
 <html>
-    <!-- Head -->
-    <head>
-        <!-- Update 10/9/2024 -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <link rel="icon" type="image/png" href="lilscizz.png">
-        <title>Scizzy's Fucking Shit</title>
-        <link rel="stylesheet" href="style.css" type="text/css" media="all">   
-        <script defer src="ScizzySongs.js"></script>
-    </head>
 
-        <body>  
-            <!-- Text Testing -->
-            <p>HI hiHIII hihihihiii you found meeee!~!!!!1!!</p>
-            <p>Click on "Play" to hear a random somg i worked on!!! 
-                Just refresh for a chance to hear a new one!!</p>
+<!-- Update as of 1/8/2025 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="icon" type="image/png" href="lilscizz.png">
+    <title>Scizzy's Fucking Shit</title>
+    <link rel="stylesheet" href="GangnamStyle.css" type="text/css" media="all">   
+    <script defer src="ScizzySongs.js"></script>
+</head>
 
-            <!-- Audio Setting Test -->
-            <audio id="ScizzTheme">
-                <source src="ScizzTheme.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+    <body>  
+        <!-- Text Testing -->
+        <p>HI hiHIII hihihihiii you found meeee!~!!!!1!!</p>
+        <p>Click on "Play" to hear a random somg i worked on!!! 
+            Just refresh for a chance to hear a new one!!</p>
 
-            <audio id="Hearthome">
-                <source src="HearthomeCityScizzEdition.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+    <!-- Audio Setting Section -->
+    <section>
+        <!-- Music: 7 -->
+        <audio id="ScizzTheme">
+            <source src="ScizzanneMainThemeWIP.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Hearthome">
+            <source src="HearthomeCity.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="BlackTower">
+            <source src="BlackTower.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="GreatCanyon">
+            <source src="GreatCanyonScizzEdition.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Overture">
+            <source src="ScizzOverture1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="WiFiConnection">
+            <source src="WiFiConnectionScizzEdition.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="MegaMan">
+            <source src="MegaMan1EndScizzWIP.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
-            <audio id="BlackTower">
-                <source src="BlackTower.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            
-            <audio id="GreatCanyon">
-                <source src="GreatCanyonScizzEdition.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+        <!-- Sound Effects: 5 -->
+        <audio id="Bite">
+            <source src="Bite.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="Sigma"> 
+            <source src="ErmWhatTheSigma.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+        <audio id="Ahh"> 
+            <source src="zaytovenAhh.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+        <audio id="boom"> 
+            <source src="VineBoom.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+        <audio id="rizz"> 
+            <source src="Rizz.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
 
-            <audio id="Overture">
-                <source src="ScizzOverture1.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+    </section>
 
-            <audio id="WiFiConnection">
-                <source src="WiFiConnectionScizzEdition.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+    <!-- Random Jukebox Section -->
+    <section class="hidden">
 
-            <audio id="Ahh"> 
-                <source src="zaytovenAhh.mp3" type="audio/mpeg">
-                Your browser does not support the audio element. 
-            </audio>
+        <button id='piss' class="butt" onclick="togglePlay()">Play</button>
 
-            <audio id="boom"> 
-                <source src="VineBoom.mp3" type="audio/mpeg">
-                Your browser does not support the audio element. 
-            </audio>
+        <div>
+            <p id='identify'>Now Playing...</p>
+            <p id='hide' style='display: block'>Nothing! :3</p>
+            <p class="glowing" id='show' style='display: none'></p>
+        </div>
+    </section>
 
-            <audio id="Bite"> 
-                <source src="Bite.mp3" type="audio/mpeg">
-                Your browser does not support the audio element. 
-            </audio>
+    <!-- Video Imbed Section -->
+    <section class="hidden">
+        <video id="vid" width="320" height="320" controls onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();">
+            <source src="funny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
 
-            <!-- Buttons -->
-            <section class="hidden">
-                <button id='piss' class="butt" onclick="togglePlay()">Play</button>
+    <!-- 
+        Well lookie here! Looks like someone figured out what Ctrl + u does. Hello!
+        I am Scizzanne! I am currently learning how to program as I am majoring in
+        computer science in my university as of now. I will continue to add more features 
+        to this website the more I learn! Thank you for visiting and I hope you have a 
+        wonderful rest of your day! 
+    -->
 
-            <!-- Text -->
-                <div>
-                    <p id='identify'>Now Playing...</p>
-                    <p id='hide' style='display: block'>Nothing! :3</p>
-                    <p class="glowing" id='show' style='display: none'></p>
-                </div>
-                <br>
-            </section>
-
-            <!-- Video Imbed -->
-            <section class="hidden">
-                <video id="vid" width="320" height="320" controls onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();">
-                    <source src="funny.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </section>
-            
-            <br><br>
-
-            <!-- 
-                Well lookie here! Looks like someone figured out what Ctrl + u does. Hello!
-                I am Scizzanne! I am currently learning how to program as I am majoring in
-                computer science in my university as of now. I will continue to add more features 
-                to this website the more I learn! Thank you for visiting and I hope you have a 
-                wonderful rest of your day! 
-            -->
-        </body>
+    </body>
 </html>
