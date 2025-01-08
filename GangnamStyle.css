@@ -1,15 +1,19 @@
-/*OPPAN GANGNAM STYLE*/  
+/* OPPAN GANGNAM STYLE   
+   Update as of 1/8/2025 */ 
+   
 html {
   cursor: url('scizzu.png'), auto;
 }
-
 body {
   text-align: center;
   background: linear-gradient(320deg, 
   #242424, #1c1c1c, #000000);
   color: #DFBBF5;
-  font-family: 'Times New Roman';
+  font-family: monospace;
+  font-size: 15px;
   margin: 9cqmin;
+  height: 100dvh;
+  overflow-x: hidden;
 }
 
 /* Changing Colors */
@@ -38,35 +42,7 @@ a:active {
   text-decoration: underline;
 }
 
-  /* Scales the size of entire hover over image */
-.container {
-  position: relative;
-  width: 45%;
-}
-
-/* Image Overlay */
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.1s ease;
-  background-color: transparent;
-}
-.container:hover .overlay {
-  opacity: 1;
-}
-
-/* Buttons */
+/* Button Classes */
 .butt {
   background-position: center;
   transition: 0.8s;
@@ -88,7 +64,7 @@ button {
   border: black;
   color: #DFBBF5;
   border-radius: 50px;
-  font-family: 'Times New Roman';
+  font-family: Comic Sans MS;
   font-size: 1.2rem;
   box-shadow: 0px 0px 20px black;
   padding: 10px;
@@ -96,7 +72,7 @@ button {
   width: 75px;
 }
 button:hover {
-  box-shadow: 0px 0px 40px #DFBBF5;
+  box-shadow: 0px 0px 25px #cf82ff;
   cursor:pointer;
   cursor: url('scizzuSelect.png'), auto;
 }
@@ -106,8 +82,10 @@ button:active {
   transition-duration: 0.8s;
 }
 
-/* Transition Animation */
+
+/* Transition Animation Classes */
 .hidden {
+  margin: 5vh;
   opacity: 0;
   filter: blur(5px);
   transform: translateY(100%);
@@ -115,7 +93,7 @@ button:active {
 }
 .show {
   opacity: 1;
-  filter: blur(0);
+  filter: blur(0px);
   transform: translateY(0);
 }
 
@@ -133,16 +111,14 @@ video:active{
   box-shadow: 0px 0px 50px black;
   transform: scale(1.10);
 }
-
+  
+/* Glowing Animation */
 .glowing {
   animation: glow 1s infinite alternate;
   animation-play-state: running;
 }
-
 @keyframes glow {
   to {
-    text-shadow:rgb(187, 0, 255) 1px 0 10px;
+    text-shadow:rgb(187, 0, 255) 1px 0 20px;
   }
 }
-  
- 
