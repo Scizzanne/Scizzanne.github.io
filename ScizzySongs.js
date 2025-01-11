@@ -78,18 +78,11 @@ window.onkeydown = function(event) {
     } else if (event.keyCode === 86) { // v
         event.preventDefault();
         vine.play();
-    } else if (event.keyCode === 82) { // r
+    } else if (event.keyCode === 17 && event.keyCode === 82) { // ctrl + r
         event.preventDefault();
-        rizz.play();
-    }
+        this.location.reload(); // refreshes page
+    } 
 }
-
-// Refresh Keystroke: ctrl + r
-window.addEventListener('keydown', function (e) {
-    if (e.ctrlKey && e.key.toLowerCase() === 'r') {
-      this.location.reload();
-    }
-});
 
 // Play/Pause Variable
 var isPlaying = false;
