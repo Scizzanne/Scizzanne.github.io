@@ -84,6 +84,13 @@ window.onkeydown = function(event) {
     }
 }
 
+// Refresh Keystroke: ctrl + r
+document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && e.key.toLowerCase() === 'r') {
+      this.location.reload();
+    }
+});
+
 // Play/Pause Variable
 var isPlaying = false;
 
