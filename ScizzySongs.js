@@ -2,7 +2,7 @@
     Uhhh yeah! Hi!!! this is the uhhh thingy that make da
     somgs work n stuff!!! Nice to see you here!!! :3
 
-    Update as of 1/10/2025
+    Update as of 3/18/2025
 
 */
 
@@ -19,7 +19,6 @@ var vic = document.getElementById("Victory");
 var vid = document.getElementById("vid");
 
 var bite = document.getElementById("Bite");
-var erm = document.getElementById("Sigma")
 var zay = document.getElementById("Ahh");
 var vine = document.getElementById("boom");
 var rizz = document.getElementById("rizz");
@@ -71,21 +70,21 @@ if (song < 12) {
 
 // Sound effects from keybinds
 window.onkeydown = function(event) { 
-    if (event.keyCode === 66) { // b 
-        event.preventDefault();
-        bite.play();
-    } else if (event.keyCode === 69) { // e
-        event.preventDefault();
-        erm.play();
-    } else if (event.keyCode === 65) { // a
-        event.preventDefault();
-        zay.play();
-    } else if (event.keyCode === 86) { // v
-        event.preventDefault();
-        vine.play();
-    } else if (event.keyCode === 17 && event.keyCode === 82) { // ctrl + r
+    if (event.ctrlKey && event.key  === 'r') { // ctrl + r
         event.preventDefault();
         this.location.reload(); // refreshes page
+    } else if (event.key  === 'b') { 
+        event.preventDefault();
+        bite.play();
+    } else if (event.key  === 'r') { 
+        event.preventDefault();
+        rizz.play();
+    } else if (event.key  === 'a') { 
+        event.preventDefault();
+        zay.play();
+    } else if (event.key  === 'v') { 
+        event.preventDefault();
+        vine.play();
     } 
 }
 
