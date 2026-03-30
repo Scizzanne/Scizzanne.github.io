@@ -15,6 +15,7 @@ var overt = document.getElementById("Overture");
 var WiFi = document.getElementById("WiFiConnection");
 var mega = document.getElementById("MegaMan");
 var vic = document.getElementById("Victory");
+var floc = document.getElementById("Floccesy");
 
 var vid = document.getElementById("vid");
 
@@ -34,38 +35,42 @@ song = getRandomInt(100);
 
 // Song Selector 
 var playingMessage = new String();
-if (song < 12) {
+if (song < 11) {
     var x = black;
     document.getElementById("show").innerHTML = "Pokemon Black 2 & White 2: Black Tower";
     playingMessage = "This one was for fun :3 Just a little soundfont experiment!";
-} else if (song < 24) {
+} else if (song < 22) {
     var x = heart;
     document.getElementById("show").innerHTML = "Pokemon Diamond, Pearl, & Platinum: Hearthome City (Night)";
     playingMessage = "I might play this with my oboe sometime! :3";
-} else if (song < 36) {
+} else if (song < 33) {
     var x = great;
     document.getElementById("show").innerHTML = "Pokemon Mystery Dungeon: Great Canyon";
     playingMessage = "Ooooh I love this one! I might make more PMD covers .O.";
-} else if (song < 48) {
+} else if (song < 44) {
     var x = overt;
     document.getElementById("show").innerHTML = "Scizzanne: Overture";
     playingMessage = "This is a remake of a song I made when I was a kid! I think I was 15 when I first made this...";
-} else if (song < 60) {
+} else if (song < 55) {
     var x = WiFi;
     document.getElementById("show").innerHTML = "Pokemon Diamond, Pearl, & Platinum: Nintendo WiFi Connection";
     playingMessage = "I posted this one on Twitter before :3";
-} else if (song < 72) {
+} else if (song < 66) {
     var x = scizz;
     document.getElementById("show").innerHTML = "Scizzanne: Main Theme (WIP)";
     playingMessage = "This one isn't finished hehe... I will finish it eventually!";
-} else if (song < 84) {
+} else if (song < 77) {
     var x = mega;
     document.getElementById("show").innerHTML = "Mega Man 1: Ending (WIP)";
     playingMessage = "This is not finished... but at least I got the first part down! :3";
-} else {
+} else if (song < 88) {
     var x = vic;
     document.getElementById("show").innerHTML = "Pokemon Black & White/Black 2 & White 2: Victory Road (WIP)";
     playingMessage = "Still workin on this one too! I'm quite proud of it so far hehe :3";
+} else {
+    var x = floc;
+    document.getElementById("show").innerHTML = "Pokemon Black & White/Black 2 & White 2: Floccesy Town Recreation";
+    playingMessage = "This was just for fun hehe. There will be a cover version I will record eventually...";
 }
 
 // Sound effects from keybinds
