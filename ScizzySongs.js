@@ -69,7 +69,7 @@ if (song < 11) {
     playingMessage = "Still workin on this one too! I'm quite proud of it so far hehe :3";
 } else {
     var x = floc;
-    document.getElementById("show").innerHTML = "Pokemon Black & White/Black 2 & White 2: Floccesy Town Recreation";
+    document.getElementById("show").innerHTML = "Pokemon Black 2 & White 2: Floccesy Town Recreation";
     playingMessage = "This was just for fun hehe. There will be a cover version I will record eventually...";
 }
 
