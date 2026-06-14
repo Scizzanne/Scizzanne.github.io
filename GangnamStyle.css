@@ -1,9 +1,10 @@
 /* OPPA GANGNAM STYLE   
-   Update as of 3/18/2026 */ 
+   Update as of 6/13/2026 */ 
 
+/* DECLARE ASSETS */
 :root {
-  --cursor: url('./Images/scizzu.png'), auto;
-  --hover-cursor: url('./Images/scizzuSelect.png'), auto;
+  --cursor: url('./Assets/scizzu.png'), auto;
+  --hover-cursor: url('./Assets/scizzuSelect.png'), auto;
 }
 
 html {

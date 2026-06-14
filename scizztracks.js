@@ -1,3 +1,9 @@
+/* 
+    Public tracks be liek
+
+    Update as of 6/13/2026
+*/
+
 function copyCurrentUrl() {
   const url = window.location.href;
   
