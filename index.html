@@ -1,15 +1,17 @@
 <!DOCTYPE html> 
 <html>
 
-<!-- Update as of 6/20/2026 -->
+<!-- Update as of 8/28/2026 -->
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-    <link rel="icon" type="image/png" href=".\Assets\lilscizz.png">
+    <link rel="icon" type="image/png" href="./GlobalAssets/lilscizz.png">
     <title>Scizzy's Fucking Shit</title>
     <link rel="stylesheet" href="GangnamStyle.css" type="text/css" media="all">   
     <script defer src="index.js"></script>
+    <script defer src="Scripts/HiddenContent.js"></script>
 </head>
 
     <body>  
@@ -26,8 +28,9 @@
         </audio>
     </section>
 
+    <!-- ScizzTracks Link -->
     <section class="hidden">
-        <a href="scizztracks.html"> Click here for my public tracks!! </a>
+        <a href="Music/ScizzTracks.html"> Click here for my public tracks!! </a>
     </section>
 
     <!-- Random Jukebox Section -->
@@ -45,8 +48,8 @@
     <!-- Video Imbed Section -->
     <section class="hidden">
         <video id="vid" controls onclick="this.paused ? this.play() : this.pause(); arguments[0].preventDefault();">
-            <source src=".\Videos\FunnyRenDance.webm" type="video/webm">
-            <source src=".\Videos\ItsDoingWHAT.mp4" type="video/mp4">
+            <source src="./Videos/FunnyRenDance.webm" type="video/webm">
+            <source src="./Videos/ItsDoingWHAT.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </section>

@@ -1,11 +1,16 @@
-/* 
-    Uhhh yeah! Hi!!! this is the uhhh thingy that make da
-    somgs work n stuff!!! Nice to see you here!!! :3
+/**
+ *  Uhhh yeah! Hi!!! this is the uhhh thingy that make da
+ *  somgs work n stuff!!! Nice to see you here!!! :3
+ * 
+ *  Required .js files for index.html:
+ *  index.js
+ *  HiddenContent.js
+ *
+ *  Update as of 8/28/2026
+ */
 
-    Update as of 6/20/2026
-*/
-
-const songList = [
+const songList = 
+[
     {
         id: "BlackTower",
         path: "./Audio/BlackTower.mp3",
@@ -213,18 +218,3 @@ window.onkeydown = function(event) {
         vine();
     } 
 }
-
-// Shows hidden when content is on screen 
-// (set class to hidden to activate)
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            } else {
-                entry.target.classList.remove('show');
-            }
-    });
-});
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));

@@ -1,10 +1,16 @@
-/* OPPA GANGNAM STYLE   
-   Update as of 6/13/2026 */ 
+/** 
+ * OPPA GANGNAM STYLE   
+ * Update as of 8/28/2026 
+ * This is the global CSS file.
+ * 
+ * HiddenContent.js is needed to keep 
+ * functionality of hidden elements.
+ */ 
 
 /* DECLARE ASSETS */
 :root {
-  --cursor: url('./Assets/scizzu.png'), auto;
-  --hover-cursor: url('./Assets/scizzuSelect.png'), auto;
+  --cursor: url('./GlobalAssets/scizzu.png'), auto;
+  --hover-cursor: url('./GlobalAssets/scizzuSelect.png'), auto;
 }
 
 html {
@@ -87,7 +93,6 @@ button:active {
   transform: scale(1.05);
   transition-duration: 0.8s;
 }
-
 
 /* Transition Animation Classes */
 .hidden {
