@@ -1,8 +1,9 @@
 [
     {
         "title": "Lugia's Song",
-        "front page": "",
-        "original composer": "",
+        "front page": "LugiasSong/LS_ScoreFrontPage.pdf",
+        "original composer": "Ralph Dion Shuckett & John R Loeffler",
+        "credit link": "https://open.spotify.com/artist/7nIISKVacbzpP6S0pd5qmo",
         "score": "LugiasSong/LugiasSong-FullScore.pdf",
         "audio": "LugiasSong/LugiasSong.mp3",
         "orchestration": "Orchestra",
@@ -10,29 +11,42 @@
     },
     {
         "title": "The Boy Who Swallowed A Star",
-        "front page": "",
-        "original composer": "",
+        "front page": "TheBoyWhoSwallowedAStar/TBWSAS_ScoreFrontPage.pdf",
+        "original composer": "Joe Hisaishi",
+        "credit link": "https://en.wikipedia.org/wiki/Joe_Hisaishi",
         "score": "TheBoyWhoSwallowedAStar/TheBoyWhoSwallowedAStar-FullScore.pdf",
         "audio": "TheBoyWhoSwallowedAStar/TheBoyWhoSwallowedAStar.mp3",
         "orchestration": "Oboe/English Horn, French Horn, Flute, Violin",
-        "youtube link": ""
+        "youtube link": "https://www.youtube.com/watch?v=gPWNccF3U2w"
     },
     {
         "title": "Opposing Force - Mother 3: Opposing Force",
-        "front page": "",
-        "original composer": "",
+        "front page": "OpposingForce/OF_ScoreFrontPage.pdf",
+        "original composer": "Mother Forever Team",
+        "credit link": "https://mother4ever.net/mother-3-opposing-force/",
         "score": "OpposingForce/OpposingForce-FullScore.pdf",
         "audio": "OpposingForce/OpposingForce.mp3",
         "orchestration": "Orchestra",
-        "youtube link": ""
+        "youtube link": "https://www.youtube.com/watch?v=UCWYrahqaUI"
     },
     {
         "title": "Pokemon Mystery Dungeon Explorers of Sky Medley",
-        "front page": "",
-        "original composer": "",
+        "front page": "PMDEOSMedley/PMDEOSM_ScoreFrontPage.pdf",
+        "original composer": "Arata Iiyoshi, Hideki Sakamoto, Keisuke Ito, Ken-ichi Saito, and Yoshihiro Maeda",
+        "credit link": "https://mysterydungeonwiki.com/wiki/Meta:Pok%C3%A9mon_Mystery_Dungeon:_Explorers_of_Sky_Soundtrack",
         "score": "PMDEOSMedley/PMDEOSMedley.pdf",
         "audio": "PMDEOSMedley/PMDEOSMedley.mp3",
         "orchestration": "Orchestra",
         "youtube link": ""
+    },
+    {
+        "title": "Pentinence",
+        "front page": "Pentinence/P_ScoreFrontPage.pdf",
+        "original composer": "Scizzanne",
+        "credit link": "https://www.youtube.com/@Scizzanne",
+        "score": "Pentinence/Pentinence-FullScore.pdf",
+        "audio": "Pentinence/Pentinence.mp3",
+        "orchestration": "Orchestra",
+        "youtube link": "https://www.youtube.com/watch?v=p9Rgis5SlUo"
     }
 ]
