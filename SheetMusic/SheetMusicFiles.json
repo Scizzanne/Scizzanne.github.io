@@ -48,5 +48,15 @@
         "audio": "Pentinence/Pentinence.mp3",
         "orchestration": "Orchestra",
         "youtube link": "https://www.youtube.com/watch?v=p9Rgis5SlUo"
+    },
+    {
+        "title": "Found",
+        "front page": "Found/F_ScoreFrontPage.pdf",
+        "original composer": "Scizzanne",
+        "credit link": "https://www.youtube.com/@Scizzanne",
+        "score": "Found/Found-FullScore.pdf",
+        "audio": "Found/Found.mp3",
+        "orchestration": "Orchestra",
+        "youtube link": "https://www.youtube.com/watch?v=sfpBnMDRnBE"
     }
 ]
